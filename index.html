@@ -23,7 +23,7 @@
             background: var(--surface); border-radius: 16px;
             padding: 2rem; box-shadow: 0 8px 32px rgba(0,0,0,0.3); 
         }
-        .input-group { display: flex; gap: 1rem; margin-bottom: 2rem; }
+        .input-group { display: flex; gap: 1rem; margin-bottom: 2rem; flex-direction: column; }
         input[type="text"] { 
             flex: 1; padding: 1rem; border: 2px solid #333;
             border-radius: 8px; background: var(--background); color: white;
@@ -37,6 +37,10 @@
         }
         button:hover { transform: translateY(-2px); }
         button:disabled { opacity: 0.7; cursor: not-allowed; }
+
+        @media (min-width: 600px) {
+            .input-group { flex-direction: row; }
+        }
         .image-container { 
             position: relative; border-radius: 12px; overflow: hidden;
             background: var(--background); aspect-ratio: 1/1; display: flex;
