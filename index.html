@@ -13,13 +13,15 @@
     <style>
         :root { 
             --primary: #f8f9fa; 
-            --background: linear-gradient(135deg, #ff7e5f, #ffc9a0); 
+            --background: linear-gradient(135deg, #ff6842, #febd8b); 
             --surface: rgba(0, 0, 0, 0.5); 
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
             font-family: 'Inter', system-ui, sans-serif; 
-            background: var(--background); color: white;
+            background: var(--background), url('./clean-gray-paper.png');
+            background-blend-mode: overlay;
+            color: white;
             min-height: 100vh; display: flex; flex-direction: column;
             align-items: center; padding: 2rem; 
         }
